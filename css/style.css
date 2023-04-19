@@ -60,6 +60,10 @@ main {
   background: #f7f7f7;
 }
 
+.imgRobot {
+    width: 700px;
+}
+
 /*Dispositivos pequeños*/
 @media all and (max-width: 767px) {
   .primerArticulo {
