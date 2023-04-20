@@ -50,9 +50,13 @@ main {
   border: none;
 }
 
+.contenido-banner img {
+  height: 280px;
+}
+
 .card-container img {
-  width: auto;
-  height: 300px;
+  margin: auto;
+  height: 280px;
   object-fit: cover;
 }
 
@@ -61,24 +65,27 @@ main {
 }
 
 .imgRobot {
-    width: 700px;
+  width: 700px;
 }
 
 /*Dispositivos pequeños*/
 @media all and (max-width: 767px) {
-  .primerArticulo {
+  .primerArticulo,
+  .segundoArticulo {
     margin-bottom: 0;
   }
 }
 /*Disp medianos*/
 @media all and (min-width: 768px) and (max-width: 991px) {
-  .primerArticulo {
+  .primerArticulo,
+  .segundoArticulo {
     margin-bottom: 0;
   }
 }
 /*Disp grandes*/
 @media all and (min-width: 992px) {
-  .primerArticulo {
+  .primerArticulo,
+  .segundoArticulo {
     margin-bottom: 0;
   }
 }
