@@ -30,14 +30,14 @@
           <div class="row">
             <div class="col-12 col-md-6">
               <div class="contenido-banner">
-                <form action="#" id="busqueda" method="post" class="formulario">
+                <form id="busqueda" method="post" class="formulario">
                   <input
                     class="u-full-width"
                     type="text"
                     placeholder="¿Que te gustaría Buscar?"
                     id="buscador"
                   />
-                  <input
+                  <button
                     type="submit"
                     id="submit-buscador"
                     class="submit-buscador"
@@ -48,8 +48,9 @@
           </div>
         </div>
       </section>
-      <section class="row">
+      <section class="row" id="sectionPrincipal">
         <article
+          id="primerArticulo"
           class="d-flex col-md-6 justify-content-center flex-column flex-md-row primerArticulo mt-2 p-2"
         >
           <div class="card border-bottom d-flex flex-column">
@@ -60,11 +61,11 @@
             />
             <div class="p-2">
               <a href="#" class="text-decoration-none">
-                <h4 class="fw-bold display-4 text-start">
+                <h4 class="fw-bold display-4 text-start card-title">
                   Inteligencia artificial
                 </h4>
               </a>
-              <h6 class="flex-grow-1 display-6">
+              <h6 class="flex-grow-1 display-6 card-text">
                 Conjunto de sistemas o combinación de algoritmos
               </h6>
               <a
@@ -76,6 +77,7 @@
           </div>
         </article>
         <article
+          id="segundoArticulo"
           class="d-flex col-md-6 justify-content-center flex-column flex-md-row-reverse flex-md-row text-md-end my-2 p-2"
         >
           <div class="card border-bottom d-flex flex-column">
@@ -90,9 +92,10 @@
                 class="text-primary d-none d-md-flex flex-grow-1 text-decoration-none"
               >
               </a>
-              <h5 class="fw-bold display-4 text-start">
+              <h5 class="fw-bold display-4 text-start card-title">
                 OpenScale: 10 motivos para incorporarlo en proyectos IA
               </h5>
+              <h6 class="flex-grow-1 display-6 card-text"></h6>
               <a
                 href="#"
                 class="badge badge-primary fs-3 d-none d-md-flex text-black"
@@ -104,7 +107,9 @@
       </section>
       <section class="mb-3">
         <hr />
-        <h5 class="display-5 mb-2">LO QUE DEBES SABER:</h5>
+        <h5 id="textoTitulo" class="display-5 mb-4 mt-3">
+          LO QUE DEBES SABER:
+        </h5>
         <article
           id="listadoArticulos"
           class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3"

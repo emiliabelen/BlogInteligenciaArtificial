@@ -51,7 +51,7 @@ main {
 }
 
 .card-container img {
-  width: auto;
+  margin: auto;
   height: 300px;
   object-fit: cover;
 }
@@ -61,7 +61,7 @@ main {
 }
 
 .imgRobot {
-    width: 700px;
+  width: 700px;
 }
 
 /*Dispositivos pequeños*/
