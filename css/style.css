@@ -68,6 +68,14 @@ main {
   width: 700px;
 }
 
+.imgCardAcercaNosotros img {
+  width: 227px;
+  height: 272px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+
 /*Dispositivos pequeños*/
 @media all and (max-width: 767px) {
   .primerArticulo,
