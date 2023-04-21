@@ -74,6 +74,10 @@ main {
   .segundoArticulo {
     margin-bottom: 0;
   }
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
 }
 /*Disp medianos*/
 @media all and (min-width: 768px) and (max-width: 991px) {
