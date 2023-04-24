@@ -1,5 +1,7 @@
 // obtener los elementos de la lista de artículos
-let arrayArticulos = Array.from(document.getElementsByClassName('card'));
+let arrayArticulos = Array.from(
+  document.getElementsByClassName('card-container')
+);
 let form = document.querySelector('form');
 let buscador = document.querySelector('#buscador');
 let listadoArticulos = document.getElementById('listadoArticulos');
