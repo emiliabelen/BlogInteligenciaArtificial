@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
 }
 
 main {
@@ -74,6 +74,15 @@ main {
   object-fit: cover;
   display: block;
   margin: auto;
+}
+
+#publicidad {
+  display: none;
+}
+
+.imgModal {
+  margin: 0 auto;
+  width: 100%;
 }
 
 /*Dispositivos pequeños*/
