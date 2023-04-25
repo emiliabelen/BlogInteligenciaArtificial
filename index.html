@@ -17,17 +17,411 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
     <title>Blog de Inteligencia Artificial</title>
+    <link rel="icon" type="image/x-icon" href="/iconoIA.jpg" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="./img/iconoIA.jpg"
+              alt="Icono IA"
+              width="25"
+              height="30"
+            />
+          </a>
+          <a class="navbar-brand" href="index.html">Blog de IA</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorías
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./pages/error404.html">
+                      Machine Learning (ML)</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/error404.html"
+                      >Deep Learning</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/error404.html"
+                      >Neural Networks</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/error404.html"
+                      >Natural Language Processing</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/error404.html"
+                      >Chatbots</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/error404.html"
+                      >Asistente digital virtual</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/nosotros.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="./pages/error404.html">Soporte</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./pages/error404.html">Error404</a>
+              </li>
+              <li class="nav-item dropdown">
+                <span
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i id="iconoTema" class="bi bi-moon-stars-fill"></i>
+                </span>
+                <ul class="dropdown-menu">
+                  <li>
+                    <button class="dropdown-item" id="btnThemeLight">
+                      <i id="iconLight" class="bi bi-sun-fill"></i> Light
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" id="btnThemeDark">
+                      <i id="iconDark" class="bi bi-moon-stars-fill"></i> Dark
+                    </button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <section
+        id="fondoBanner"
+        class="container-fluid border border-1 border-green"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="contenido-banner">
+                <form id="busqueda" method="post" class="formulario">
+                  <input
+                    class="u-full-width"
+                    type="text"
+                    placeholder="¿Que te gustaría Buscar?"
+                    id="buscador"
+                  />
+                  <button
+                    type="submit"
+                    id="submit-buscador"
+                    class="submit-buscador"
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="row" id="sectionPrincipal">
+        <article
+          id="primerArticulo"
+          class="d-flex col-md-6 justify-content-center flex-column flex-md-row primerArticulo mt-2"
+        >
+          <div class="card h-100 card-container">
+            <img
+              src="./img/inteligencia artificial-1.jpg"
+              alt="Inteligencia Artificial"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <a href="#" class="text-decoration-none">
+                <h5 class="fw-bold text-start card-title text-lg-info">
+                  Inteligencia artificial
+                </h5>
+              </a>
+              <p class="flex-grow-1 card-text">
+                Conjunto de sistemas o combinación de algoritmos
+              </p>
+              <a
+                href="#"
+                class="badge badge-primary d-none d-md-flex text-black"
+                >Más información</a
+              >
+            </div>
+          </div>
+        </article>
+        <article
+          id="segundoArticulo"
+          class="d-flex col-md-6 justify-content-center flex-column flex-md-row-reverse flex-md-row text-md-end my-2"
+        >
+          <div class="card h-100 card-container">
+            <img
+              src="./img/pasted-image-0.png"
+              alt="El futuro de la IA"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <a href="#" class="d-md-flex flex-grow-1 text-decoration-none"
+                ><h5 class="fw-bold text-start card-title text-lg-primary">
+                  OpenScale
+                </h5>
+              </a>
+              <p class="flex-grow-1 card-text text-start">
+                10 motivos para incorporarlo en proyectos IA
+              </p>
+              <a
+                href="#"
+                class="badge badge-primary d-none d-md-flex text-black"
+                >Más información</a
+              >
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="mb-3">
+        <hr />
+        <h5 id="textoTitulo" class="display-5 mb-4 mt-3">
+          LO QUE DEBES SABER:
+        </h5>
+        <article
+          id="listadoArticulos"
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3"
+        >
+          <div class="col card-container">
+            <div class="card h-100">
+              <img
+                src="./img/Cognitive-computingjpg.jpg"
+                class="card-img-top"
+                alt="Cognitive computing"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">
+                  ¿Qué ventajas ofrece la IA o Inteligencia Artificial?
+                </h5>
+                <p class="card-text">
+                  La inteligencia artificial, también conocida como IA, está
+                  llegando a las empresas. Algunas...
+                </p>
+              </div>
+              <a href="#" class="badge badge-primary text-black m-3 text-start"
+                >Más información</a
+              >
+            </div>
+          </div>
+          <div class="col card-container">
+            <div class="card h-100">
+              <img
+                src="./img/personalizacion-con-cognitive.jpg"
+                class="card-img-top"
+                alt="Cognitive computing"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">
+                  5 claves para entender y aplicar la Personalización con
+                  Cognitive
+                </h5>
+                <p class="card-text">
+                  La personalización con cognitive es una poderosa estrategia
+                  tecnológica-comercial que combina...
+                </p>
+              </div>
+              <a href="#" class="badge badge-primary text-black m-3 text-start"
+                >Más información</a
+              >
+            </div>
+          </div>
+          <div class="col card-container">
+            <div class="card h-100">
+              <img
+                src="./img/reconocimiento-de-imagenes.jpg"
+                class="card-img-top"
+                alt="mujer hablando al público"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-dark">
+                  Reconocimiento de imágenes en customer experience: 5 casos
+                  reales
+                </h5>
+                <p class="card-text">
+                  El reconocimiento de imágenes es una función que se logra
+                  mediante sistemas de computer vision...
+                </p>
+              </div>
+              <a href="#" class="badge badge-primary text-black m-3 text-start"
+                >Más información</a
+              >
+            </div>
+          </div>
+          <div class="col card-container">
+            <div class="card h-100">
+              <img
+                src="./img/inteligencia-artificial-en-la-medicina.jpg"
+                class="card-img-top"
+                alt="Machine Learning"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-dark">
+                  Conceptos básicos del Machine Learning, para todos
+                </h5>
+                <p class="card-text">
+                  Mucho se habla de la importancia de los datos hoy en día,
+                  tanto es así, que parece ser que la...
+                </p>
+              </div>
+              <a href="#" class="badge badge-primary text-black m-3 text-start"
+                >Más información</a
+              >
+            </div>
+          </div>
+          <div class="col card-container">
+            <div class="card h-100">
+              <img
+                src="./img/machinelearning.jpg"
+                class="card-img-top"
+                alt="Machine Learning"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-dark">
+                  Inteligencia artificial en medicina: casos reales de éxito
+                </h5>
+                <p class="card-text">
+                  Según proyecciones del Banco Interamericano de Desarrollo
+                  (BID), para el 2020, los datos...
+                </p>
+              </div>
+              <a href="#" class="badge badge-primary text-black m-3 text-start"
+                >Más información</a
+              >
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="bg-dark navbar-dark text-secondary py-4 border-1">
+      <section class="container">
+        <div class="row text-center">
+          <aside class="col-md-4 mt-2 mb-3">
+            <h4 class="text-md-start">Seguinos en nuestras redes</h4>
+            <div class="text-md-start">
+              <a href="./pages/error404.html" class="link-secondary"
+                ><i class="bi bi-facebook fs-4 mx-2"></i
+              ></a>
+
+              <a href="./pages/error404.html" class="link-secondary"
+                ><i class="bi bi-instagram fs-4 me-2"></i
+              ></a>
+              <a href="./pages/error404.html" class="link-secondary"
+                ><i class="bi bi-twitter fs-4"></i
+              ></a>
+            </div>
+          </aside>
+
+          <aside class="col-md-4 my-2 text-md-start">
+            <ul>
+              <li>
+                <a
+                  class="text-decoration-none link-secondary"
+                  href="./pages/nosotros.html"
+                  >Acerca de nosotros</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-decoration-none link-secondary"
+                  href="./pages/error404.html"
+                  >Preguntas frecuentes</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-decoration-none link-secondary"
+                  href="./pages/error404.html"
+                  >Términos de uso</a
+                >
+              </li>
+            </ul>
+          </aside>
+
+          <aside class="col-md-4 my-2 text-md-start">
+            <ul>
+              <li>
+                <a
+                  class="text-decoration-none link-secondary"
+                  href="./pages/contacto.html"
+                  >Contactanos</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-decoration-none link-secondary"
+                  href="./pages/error404.html"
+                  >Prensa</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-decoration-none link-secondary"
+                  href="./pages/error404.html"
+                  >Trabaja con Nosotros</a
+                >
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
     <script src="js/app.js"></script>
+    <script src="js/colorNavbar.js"></script>
   </body>
 </html>

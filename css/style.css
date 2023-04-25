@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Merriweather", serif;
+}
+
+main {
+  flex-grow: 1;
+}
+
+#fondoBanner {
+  background-image: url(../img/ade_21_de_abril.jpg);
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.contenido-banner {
+  margin-top: 80px;
+  color: white;
+}
+
+.contenido-banner form {
+  position: relative;
+  margin-bottom: 0;
+}
+.contenido-banner form #buscador {
+  height: 50px;
+  margin-bottom: 0;
+}
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+.contenido-banner form .submit-buscador {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  padding: 0;
+  display: block;
+  text-indent: -9999px;
+  width: 50px;
+  background-image: url(../img/lupa.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.contenido-banner img {
+  height: 280px;
+}
+
+.card-container img {
+  margin: auto;
+  height: 280px;
+  object-fit: cover;
+}
+
+.card {
+  background: #f7f7f7;
+}
+
+.imgRobot {
+  width: 700px;
+}
+
+.imgCardAcercaNosotros img {
+  width: 227px;
+  height: 272px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+
+#publicidad {
+  display: none;
+}
+
+.imgModal {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/*Dispositivos pequeños*/
+@media all and (max-width: 767px) {
+  .primerArticulo,
+  .segundoArticulo {
+    margin-bottom: 0;
+  }
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+}
+/*Disp medianos*/
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .primerArticulo,
+  .segundoArticulo {
+    margin-bottom: 0;
+  }
+}
+/*Disp grandes*/
+@media all and (min-width: 992px) {
+  .primerArticulo,
+  .segundoArticulo {
+    margin-bottom: 0;
+  }
+}
