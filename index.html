@@ -22,13 +22,13 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
     <title>Blog de Inteligencia Artificial</title>
-    <link rel="icon" type="image/x-icon" href="/iconoIA.jpg" />
+    <link rel="icon" type="image/x-icon" href="./img/iconoIA.jpg" />
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="./index.html">
             <img
               src="./img/iconoIA.jpg"
               alt="Icono IA"
@@ -36,7 +36,7 @@
               height="30"
             />
           </a>
-          <a class="navbar-brand" href="index.html">Blog de IA</a>
+          <a class="navbar-brand" href="./index.html">Blog de IA</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -51,14 +51,17 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
                   >Inicio</a
                 >
               </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
+                  href="./pages/error404.html"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -104,7 +107,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/pages/nosotros.html"
+                <a class="nav-link" href="./pages/nosotros.html"
                   >Sobre Nosotros</a
                 >
               </li>
@@ -142,10 +145,7 @@
       </nav>
     </header>
     <main class="container">
-      <section
-        id="fondoBanner"
-        class="container-fluid border border-1 border-green"
-      >
+      <section id="fondoBanner" class="container-fluid">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-6">
@@ -171,26 +171,28 @@
       <section class="row" id="sectionPrincipal">
         <article
           id="primerArticulo"
-          class="d-flex col-md-6 justify-content-center flex-column flex-md-row primerArticulo mt-2"
+          class="d-flex col-md-6 justify-content-around flex-column flex-md-row primerArticulo mt-2"
         >
-          <div class="card h-100 card-container">
-            <img
-              src="./img/inteligencia artificial-1.jpg"
-              alt="Inteligencia Artificial"
-              class="card-img-top"
-            />
-            <div class="card-body">
-              <a href="#" class="text-decoration-none">
-                <h5 class="fw-bold text-start card-title text-lg-info">
-                  Inteligencia artificial
-                </h5>
-              </a>
-              <p class="flex-grow-1 card-text">
-                Conjunto de sistemas o combinación de algoritmos
-              </p>
+          <div class="card-container">
+            <div class="card h-100">
+              <img
+                src="./img/inteligencia artificial-1.jpg"
+                alt="Inteligencia Artificial"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <a href="./pages/articulo1.html" class="text-decoration-none">
+                  <h5 class="fw-bold text-start card-title text-lg-info">
+                    Inteligencia artificial
+                  </h5>
+                </a>
+                <p class="flex-grow-1 card-text">
+                  Conjunto de sistemas o combinación de algoritmos
+                </p>
+              </div>
               <a
-                href="#"
-                class="badge badge-primary d-none d-md-flex text-black"
+                href="./pages/articulo1.html"
+                class="badge badge-primary d-none d-md-flex text-black m-3"
                 >Más información</a
               >
             </div>
@@ -200,24 +202,28 @@
           id="segundoArticulo"
           class="d-flex col-md-6 justify-content-center flex-column flex-md-row-reverse flex-md-row text-md-end my-2"
         >
-          <div class="card h-100 card-container">
-            <img
-              src="./img/pasted-image-0.png"
-              alt="El futuro de la IA"
-              class="card-img-top"
-            />
-            <div class="card-body">
-              <a href="#" class="d-md-flex flex-grow-1 text-decoration-none"
-                ><h5 class="fw-bold text-start card-title text-lg-primary">
-                  OpenScale
-                </h5>
-              </a>
-              <p class="flex-grow-1 card-text text-start">
-                10 motivos para incorporarlo en proyectos IA
-              </p>
+          <div class="card-container">
+            <div class="card h-100">
+              <img
+                src="./img/open.jpg"
+                alt="El futuro de la IA"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <a
+                  href="./pages/articulo2.html"
+                  class="d-md-flex flex-grow-1 text-decoration-none"
+                  ><h5 class="fw-bold text-start card-title text-lg-primary">
+                    ¿Qué es el chatgpt y como se usa?
+                  </h5>
+                </a>
+                <p class="flex-grow-1 card-text text-start">
+                  Con esta herramienta es capaz de sustituir a Google.
+                </p>
+              </div>
               <a
-                href="#"
-                class="badge badge-primary d-none d-md-flex text-black"
+                href="./pages/articulo2.html"
+                class="badge badge-primary d-none d-md-flex text-black m-3"
                 >Más información</a
               >
             </div>
@@ -241,7 +247,7 @@
                 alt="Cognitive computing"
               />
               <div class="card-body">
-                <h5 class="card-title fw-bold">
+                <h5 class="card-title fw-bold text-dark">
                   ¿Qué ventajas ofrece la IA o Inteligencia Artificial?
                 </h5>
                 <p class="card-text">
@@ -249,7 +255,9 @@
                   llegando a las empresas. Algunas...
                 </p>
               </div>
-              <a href="#" class="badge badge-primary text-black m-3 text-start"
+              <a
+                href="./pages/error404.html"
+                class="badge badge-primary text-black m-3 text-start"
                 >Más información</a
               >
             </div>
@@ -262,7 +270,7 @@
                 alt="Cognitive computing"
               />
               <div class="card-body">
-                <h5 class="card-title fw-bold">
+                <h5 class="card-title fw-bold text-dark">
                   5 claves para entender y aplicar la Personalización con
                   Cognitive
                 </h5>
@@ -271,7 +279,9 @@
                   tecnológica-comercial que combina...
                 </p>
               </div>
-              <a href="#" class="badge badge-primary text-black m-3 text-start"
+              <a
+                href="./pages/error404.html"
+                class="badge badge-primary text-black m-3 text-start"
                 >Más información</a
               >
             </div>
@@ -293,7 +303,9 @@
                   mediante sistemas de computer vision...
                 </p>
               </div>
-              <a href="#" class="badge badge-primary text-black m-3 text-start"
+              <a
+                href="./pages/error404.html"
+                class="badge badge-primary text-black m-3 text-start"
                 >Más información</a
               >
             </div>
@@ -314,7 +326,9 @@
                   tanto es así, que parece ser que la...
                 </p>
               </div>
-              <a href="#" class="badge badge-primary text-black m-3 text-start"
+              <a
+                href="./pages/error404.html"
+                class="badge badge-primary text-black m-3 text-start"
                 >Más información</a
               >
             </div>
@@ -335,7 +349,9 @@
                   (BID), para el 2020, los datos...
                 </p>
               </div>
-              <a href="#" class="badge badge-primary text-black m-3 text-start"
+              <a
+                href="./pages/error404.html"
+                class="badge badge-primary text-black m-3 text-start"
                 >Más información</a
               >
             </div>
