@@ -9,8 +9,6 @@ let btnThemeLight = document.querySelector('#btnThemeLight');
 btnThemeDark.addEventListener('click', () => cambiarTema('dark'));
 btnThemeLight.addEventListener('click', () => cambiarTema('light'));
 
-console.log(iconoTema);
-
 function cambiarTema(color) {
   document.querySelector('html').setAttribute('data-bs-theme', color);
   //guardar en localstorage

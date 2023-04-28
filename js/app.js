@@ -64,7 +64,6 @@ function mostrarArticulosPrincipales(show) {
 }
 
 function mostrarArrayArticulos() {
-  console.log(arrayArticulos);
   arrayArticulos.forEach((articulo, index) => {
     if (index === 0) {
       primerArticulo.appendChild(articulo);
